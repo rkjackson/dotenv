@@ -170,5 +170,21 @@ describe('dotenv', function () {
       parsed.should.have.property('USERNAME', 'therealnerdybeast@example.tld')
       done()
     })
+
+    it('sets despite leading export', function (done) {
+      parsed.EXPORTED.should.eql('exported')
+      done()
+    })
+
+    it('still supports export as variable name', function (done) {
+      parsed.EXPORT.should.eql('export')
+      parsed.export.should.eql('export')
+      done()
+    })
+
+    it('not confused by variable name starting with export', function (done) {
+      parsed.exportedKey.should.eql('foo')
+      done()
+    })
   })
 })

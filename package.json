@@ -1,6 +1,6 @@
 {
   "name": "dotenv",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Loads environment variables from .env file",
   "main": "lib/main.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/motdotla/dotenv.git"
+    "url": "git://github.com/rkjackson/dotenv.git"
   },
   "keywords": [
     "dotenv",
